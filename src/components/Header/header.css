@@ -55,7 +55,7 @@ header div {
 }
 
 .lowerNavLogo {
-	width: 10%;
+	width: 15%;
 }
 
 .lowerNavLogo a {
@@ -199,6 +199,11 @@ header div {
 		overflow: hidden;
 	}
 
+	.mobileLogo a{
+		text-decoration: none;
+		color: white;
+	}
+
 	.mobileHarmburger {
 		width: 30px;
 		height: 30px;
@@ -261,7 +266,7 @@ header div {
 	.mobileNav.active {
 		animation-name: menuDrawer;
         animation-fill-mode: both;
-		animation-duration: 1s;
+		animation-duration: .5s;
 	}
 
 	@keyframes menuDrawer {
@@ -277,7 +282,7 @@ header div {
 
     .nonMobileNav{
         display: none;
-        animation-duration: 5s;
+        animation-duration: 5s !important;
     }
 
 	.mobileNavMenu {

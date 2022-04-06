@@ -30,7 +30,7 @@ function Header() {
 
                 <div className="lowerNav">
                     <div className="lowerNavLogo">
-                        <h3 className="logo"><a href="/">Logo</a></h3>
+                        <h3 className="logo"><a href="/">Fuoye MSSN</a></h3>
                     </div>
 
                     <div className="lowerNavHarmburger">
@@ -54,7 +54,7 @@ function Header() {
                 <div className="mobileMenu">
 
                     <div className="mobileLogo">
-                        <h3 className="logo"><a href="/">Logo</a></h3>
+                        <h3 className="logo"><a href="/">Fuoye MSSN</a></h3>
                     </div>
 
                     {/* <div className='mobileHarmburger'> */}
