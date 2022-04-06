@@ -3,7 +3,7 @@
     height: fit-content;
     padding: 50px 20%;
     box-sizing: border-box;
-}
+} 
 
 .sessionSessionWrapper{
     width: 100%;
@@ -68,3 +68,68 @@
     font-size: 11px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 1680px) {
+	.sessionSession {
+        padding-left: 10%;
+        padding-right: 10%;
+
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.sessionSession {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.sessionSessionItem {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.sessionSession {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.sessionSessionsListWrapper {
+		display: flex;
+        flex-direction: column;
+		width: 100%;
+		height: auto;
+		margin: 0px 0 0px 0;
+		justify-content: space-around;
+        align-items: center;
+	}
+
+	.sessionSessionsList {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sessionSessionItem {
+		width: 65%;
+		background-color: white;
+        margin-bottom: 50px;
+		box-shadow: 1px 0px 25px rgba(221, 221, 221, 0.712);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

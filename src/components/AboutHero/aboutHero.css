@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.aboutHeroWrapper{
+.aboutHeroWrapper{ 
     width: 100%;
     position: relative;
     height: 200px;
@@ -29,4 +29,47 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+@media screen and (max-width: 1680px) {
+	.aboutHero {
+		padding: 0 10%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.aboutHero {
+		padding: 0 5%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.aboutHero {
+		padding: 0;
+	}
+
+	.heroItemImage {
+		width: 200%;
+	}
+
+	.heroItemHeading {
+		margin-bottom: 20px;
+		padding: 10px 15px;
+		border-radius: 10px;
+		color: white;
+		opacity: 0;
+		background-color: rgb(100, 187, 0);
+		transform: translateY(-200%);
+		transition-duration: 1s;
+	}
+
+	.heroItemText {
+		width: 75%;
+        font-size: 14px;
+		line-height: 22px;
+	}
 }

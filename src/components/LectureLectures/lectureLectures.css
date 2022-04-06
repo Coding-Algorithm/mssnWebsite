@@ -4,7 +4,7 @@
     padding: 50px 20%;
     box-sizing: border-box;
 }
- 
+  
 .lectureLecturesWrapper{
     width: 100%;
     display: flex;
@@ -89,4 +89,60 @@
 
 .downloadButton:active{
     transform: scale(.75);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1680px) {
+	.lectureLectures {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.lectureLectures {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.lectureLecturesItem {
+		width: 30%;
+	}
+
+	.lectureLecturesItemInfo {
+		padding: 10px 10px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.lectureLectures {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.lectureLecturesListWrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		margin: 0px 0 0px 0;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.lectureLecturesList {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.lectureLecturesItem {
+		width: 75%;
+		background-color: white;
+		margin-bottom: 50px;
+		box-shadow: 1px 0px 25px rgba(221, 221, 221, 0.712);
+	}
 }

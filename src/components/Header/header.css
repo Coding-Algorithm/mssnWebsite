@@ -253,7 +253,7 @@ header div {
 		top: 70px;
 		transform: translateX(-200%);
 		background-color: rgb(255, 255, 255);
-		z-index: 1;
+		z-index: 1000;
 		transition-duration: 1s;
 		animation-duration: 5s;
 	}
