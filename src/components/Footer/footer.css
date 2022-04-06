@@ -1,0 +1,121 @@
+.footer {
+	width: 100%;
+	padding: 0px 20%;
+	box-sizing: border-box;
+}
+
+.footerWrapper {
+	width: 100%;
+	display: flex;
+	padding: 50px 0;
+	justify-content: space-around;
+	background-color: green;
+}
+
+.quickLinksTitle {
+	margin-bottom: 15px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.quickLinksList {
+	font-size: 12px;
+}
+
+.quickLinksList li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.quickLinksList a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.774);
+}
+
+.quickLinksList a:hover{
+    color: orange;
+}
+
+.footerContactTitle {
+	margin-bottom: 15px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.contactLists h4 {
+	margin-bottom: 15px;
+	color: white;
+}
+
+.contactLists li {
+	list-style: none;
+}
+
+.contactPhoneNumber {
+	margin-bottom: 25px;
+}
+
+.phoneNumberList li {
+	list-style: none;
+	margin-bottom: 10px;
+	color: rgba(255, 255, 255, 0.774);
+}
+
+.emailList li {
+	list-style: none;
+	margin-bottom: 10px;
+	color: rgba(255, 255, 255, 0.774);
+}
+
+.donateButton {
+	border: none;
+	padding: 15px 30px;
+	background-color: white;
+	color: green;
+	letter-spacing: 1.5px;
+	font-size: 18px;
+}
+
+.footerCopyright {
+	margin: 30px 0;
+	width: 100%;
+	text-align: center;
+	color: rgb(0, 36, 0);
+}
+
+@media screen and (max-width: 1680px) {
+	.footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.footer {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.footer {
+		padding-left: 0px;
+		padding-right: 0px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.footerWrapper {
+		width: 100%;
+		flex-direction: column;
+		padding: 60px 20px;
+	}
+
+	.quickLinksList li {
+        font-size: 16px;
+	}
+
+	.footerWrapper div {
+		margin-bottom: 50px;
+	}
+}

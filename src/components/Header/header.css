@@ -1,0 +1,346 @@
+header {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 20%;
+	font-size: 14px;
+}
+
+header div {
+	display: flex;
+	height: 70px;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+.mobileMenu {
+	display: none;
+}
+
+.upperNav {
+	flex: 6;
+	display: flex;
+}
+
+.leftUpperNav {
+	flex: 3;
+}
+
+.rightUpperNav {
+	flex: 7;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.upperNavMenu {
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.upperNavMenu li {
+	list-style: none;
+}
+
+.upperNavMenu a {
+	text-decoration: none;
+	color: black;
+}
+
+.lowerNav {
+	background-color: green;
+	justify-content: space-between;
+}
+
+.lowerNavLogo {
+	width: 10%;
+}
+
+.lowerNavLogo a {
+	text-decoration: none;
+	color: white;
+}
+
+.lowerNavMenu {
+	width: 55%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.lowerNavMenu li {
+	list-style: none;
+}
+
+.lowerNavMenu a {
+    position: relative;
+	text-decoration: none;
+	color: white;
+}
+
+.lowerNavMenu a:hover::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: -5px;
+    background-color: orange;
+    animation: beforeIn;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes beforeIn {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.headerDonate {
+	background-color: white;
+	height: 35px;
+	width: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.headerDonateLink {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: green !important;
+	animation-duration: 1s;
+	overflow: hidden;
+}
+
+.headerDonateLink:hover {
+	transform: scale(0.9);
+}
+
+.headerDonateLink::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(-100%);
+	background-color: green;
+	animation-duration: 0.5s;
+}
+
+.headerDonateLink:hover.headerDonateLink::before {
+	display: flex;
+	transform: translateX(100%);
+	background-color: green;
+	color: white;
+	animation-duration: 0.5s;
+	animation-name: anime;
+}
+
+@keyframes anime {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@media screen and (max-width: 1680px) {
+	header {
+		padding: 0 10%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	header {
+		padding: 0 5%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	header {
+		padding: 0;
+		box-sizing: border-box;
+		overflow: hidden;
+		background-color: green;
+	}
+
+	header div {
+		padding: 0 5px;
+	}
+
+	.upperNav {
+		display: none;
+	}
+
+	.lowerNav {
+		display: none;
+	}
+
+	.mobileMenu {
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
+	}
+
+	.mobileHarmburger {
+		width: 30px;
+		height: 30px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		transform: rotateZ(-270deg);
+		transition-duration: 0.5s;
+	}
+
+	.mobileHarmburger:hover {
+		cursor: pointer;
+	}
+
+	.mobileHarmburger.active {
+		transform: rotateZ(270deg);
+	}
+	.mobileHarmburger.inactive {
+		transform: rotateZ(0deg);
+	}
+
+	span.harmburgerMenuSpan {
+		display: block;
+		width: 30px;
+		height: 5px;
+		background-color: white;
+		margin-bottom: 10px;
+	}
+
+	/* span.harmburgerMenuSpan:hover{
+        cursor: pointer;
+    } */
+
+	span.harmburgerMenuSpan:nth-child(1) {
+		position: absolute;
+		top: 2.5px;
+	}
+	span.harmburgerMenuSpan:nth-child(2) {
+		position: absolute;
+		top: 12.5px;
+	}
+	span.harmburgerMenuSpan:nth-child(3) {
+		position: absolute;
+		top: 22.5px;
+	}
+
+	.mobileNav {
+		display: flex;
+		position: absolute;
+		height: 100vh;
+		width: 90%;
+		top: 70px;
+		transform: translateX(-200%);
+		background-color: rgb(255, 255, 255);
+		z-index: 1;
+		transition-duration: 1s;
+		animation-duration: 5s;
+	}
+
+	.mobileNav.active {
+		animation-name: menuDrawer;
+        animation-fill-mode: both;
+		animation-duration: 1s;
+	}
+
+	@keyframes menuDrawer {
+		0% {
+			transform: translateX(-200%);
+		}
+		100% {
+			right: 0;
+			transform: translateX(0%);
+			box-shadow: 0px 10px 26px rgb(187, 187, 187);
+		}
+	}
+
+    .nonMobileNav{
+        display: none;
+        animation-duration: 5s;
+    }
+
+	.mobileNavMenu {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		padding: 0 20px;
+		box-sizing: border-box;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.mobileMenuDivider {
+		width: 100%;
+		height: 1px;
+		background-color: rgb(168, 168, 168);
+		margin-top: 25px;
+		margin-bottom: 0px;
+		border: none;
+	}
+
+	.mobileMenu li {
+        position: relative;
+		list-style: none;
+		margin-top: 30px;
+		margin-bottom: 5px;
+	}
+
+	.mobileMenu li a {
+        position: relative;
+		text-decoration: none;
+		color: green;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 1 px;
+	}
+
+    .mobileMenu a:hover::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        bottom: -5px;
+        background-color: orange;
+        animation: beforeIn;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes beforeIn {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+
+	.headerDonateLink {
+		background-color: green;
+		color: white !important;
+	}
+}

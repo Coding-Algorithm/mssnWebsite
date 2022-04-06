@@ -1,0 +1,144 @@
+.homeLectures {
+	width: 100%;
+	height: fit-content;
+	padding: 50px 20%;
+	box-sizing: border-box;
+}
+
+.homeLecturesWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px 0;
+	background-color: rgba(245, 255, 238, 0.801);
+}
+
+.homeLecturesWrapper h2 {
+	text-align: center;
+	margin-bottom: 45px;
+	text-transform: uppercase;
+	color: black;
+}
+
+.homeLecturesListWrapper {
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin: 25px 0 75px 0;
+	justify-content: space-around;
+}
+
+.homeLecturessList {
+	display: flex;
+	flex-direction: column;
+}
+
+.homeLecturesItem {
+	width: 25%;
+	height: 120px;
+	background-color: white;
+	display: flex;
+	box-shadow: 1px 0px 25px rgba(221, 221, 221, 0.712);
+}
+
+.homeLecturesItemImage {
+	width: 45%;
+	background-color: rgb(6, 34, 6);
+	overflow: hidden;
+}
+
+.homeLecturesItemImage img {
+	width: 180%;
+	transform: translateX(-40%);
+	/* object-fit: cover; */
+	margin: 0;
+}
+
+.homeLecturesItemInfo {
+	padding: 10px 20px;
+	color: rgb(92, 102, 85);
+	color: rgb(55, 59, 53);
+	height: auto;
+}
+
+.homeLecturesItemTitle {
+	margin-bottom: 10px;
+}
+
+.homeLecturesItemDetails li {
+	list-style: none;
+	margin-bottom: 8px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.downloadButton {
+	border: 1.5px solid green;
+	color: green;
+	padding: 5px 10px;
+	background-color: white;
+	transition: 0.35s;
+}
+
+.downloadButton:hover {
+	background-color: rgb(255, 123, 0) !important;
+	color: white;
+	border: none;
+}
+
+.downloadButton:active {
+	background-color: rgb(255, 123, 0) !important;
+	transform: scale(0.75);
+}
+
+@media screen and (max-width: 1680px) {
+	.homeLectures {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.homeLectures {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.homeLecturesItem {
+		width: 30%;
+	}
+
+	.homeLecturesItemInfo {
+		padding: 10px 10px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.homeLectures {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.homeLecturesListWrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		margin: 0px 0 0px 0;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.homeLecturesList {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.homeLecturesItem {
+		width: 75%;
+		background-color: white;
+		margin-bottom: 50px;
+		box-shadow: 1px 0px 25px rgba(221, 221, 221, 0.712);
+	}
+}

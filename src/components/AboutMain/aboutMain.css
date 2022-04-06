@@ -1,0 +1,25 @@
+.aboutMain{
+    width: 100%;
+    padding: 0 20%;
+    box-sizing: border-box;
+}
+
+.aboutMainWrapper{
+    width: 100%;
+    padding: 130px 0; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMainTitle{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.aboutMainInfo{
+    width: 55%;
+    line-height: 30px;
+}

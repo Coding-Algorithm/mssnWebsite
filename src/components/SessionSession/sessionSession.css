@@ -1,0 +1,70 @@
+.sessionSession{
+    width: 100%;
+    height: fit-content;
+    padding: 50px 20%;
+    box-sizing: border-box;
+}
+
+.sessionSessionWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sessionSessionWrapper h2{
+    text-align: center;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+.sessionSessionsListWrapper{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 25px 0 45px 0;
+    justify-content: space-around;
+}
+
+.sessionSessionsList{
+    display: flex;
+    flex-direction: column;
+}
+
+.sessionSessionItem{
+    width: 20%;
+    background-color: white;
+    box-shadow: 1px 0px 25px rgba(221, 221, 221, 0.712);
+}
+
+.sessionSessionItemImage{
+    width: 100%;
+    height: 150px;    
+    background-color: rgb(6, 34, 6);
+    overflow: hidden;
+}
+
+.sessionSessionItemImage img{
+    width: 200%;
+    transform: translate(0%, -10%);
+    margin: 0;
+}
+
+
+.sessionSessionItemInfo{
+    padding: 10px 20px;
+    color: rgb(92, 102, 85);
+    color:rgb(55, 59, 53);
+    height: auto;
+}
+
+.sessionSessionItemTitle{
+    margin-bottom: 10px;
+}
+
+.sessionSessionItemDetails li{
+    list-style: none;
+    margin-bottom: 6px;
+    font-size: 11px;
+    font-weight: bold;
+}
